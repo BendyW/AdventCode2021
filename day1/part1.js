@@ -12,7 +12,6 @@ async function processLineByLine() {
   let inputArray = [];
 
   for await (const line of rl) {
-    // Each line in input.txt will be successively available here as `line`.
     inputArray.push(parseInt(line, 10))
   }
   return inputArray
